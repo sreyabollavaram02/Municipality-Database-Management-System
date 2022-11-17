@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="'stylesheet" type="text/css">
+    <title><Navbar</title>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+    <img src="https://www.consumercomplaints.in/thumb.php?bname=1&src=indore-municipal-corporation-imc.jpg&wmax=900&hmax=900&quality=90&nocrop=1"
+    alt="logo" class="logo">
+
+    <nav>
+        <ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Events</a></li>
+<li><a href="#">Complaints</a></li>
+<li><a href="#">Tax info</a></li>
+<li><a href="#">Contact us</a></li>
+
+
+        </ul>
+    </nav>
+    </div>
+</header>
+<style>
+    
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        height: 50px;
+    }
+    header{
+        background-color: rgb(94, 172, 240);
+    }
+    header::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        padding: 5px 8px;
+    }
+
+    nav{
+        float: right;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+    }
+
+    nav li{
+        display: inline-block;
+        margin-right: 15px;
+        padding-top: 15px;
+    }
+
+    nav a {
+        color: #444;
+        text-decoration: none;
+        text-transform: uppercase;
+
+    }
+    nav a::before{
+        content: " ";
+        display: block;
+        height: 5px;
+        background-color: #444;
+        position: absolute;
+        top: 0;
+        width: 0;
+        transition: all ease-in-out 250ms;
+    }
+    nav a::hover::before{
+        width: 100%;
+    }
+</style>
